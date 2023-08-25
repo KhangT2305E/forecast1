@@ -1,0 +1,14 @@
+<section>
+    <div class="container">
+        <input type="text" [(ngModel)]="inputValue" placeholder="City" id="ipc"/>
+        <button type="button" (click)="findWeather()"   class="btn btn-primary">Find</button>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h1 id="city">{{city}}</h1>
+        <h2>Nhiệt độ: <span id="temp">{{temp}}</span><sup>o</sup>C</h2>
+        <h3>Áp suất: <span id="press">{{press}}</span></h3>
+        <h3>Độ ẩm: <span id="humd">{{humd}}</span>%</h3>
+        <p id="desc"></p>
+    </div>

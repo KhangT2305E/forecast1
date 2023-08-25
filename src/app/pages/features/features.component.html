@@ -1,0 +1,17 @@
+<div class="bg"></div>
+<section>
+        <div *ngFor="let a of datas" class="container">
+            <div class="row" id="list">
+                <div *ngFor="let a of datas" class="col-3">
+                    <div class="card temp mt-3 mb-3">
+                        <div class="card-body">
+                            <p><span id="time">{{ a.dt_txt }}</span></p>
+                            <h2><span id="temp">{{ a.main.temp }}</span><sup>o</sup>C</h2>
+                            <p>{{ a.weather[0].description }}</p>
+                            <img id="icon" src="https://openweathermap.org/img/wn/{{ a.weather[0].icon }}.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

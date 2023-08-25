@@ -1,0 +1,29 @@
+<div class="table">
+    <table cellspacing="1" cellpadding="1" border="1" bgcolor="#000000">
+    <thead>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Số lượng</th>
+        <th>Giá</th>
+        <th>Thành tiền</th>
+    </thead>
+    <tbody *ngFor="let a of data">
+        <td>{{a.id}}</td>
+        <td>{{a.title}}</td>
+        <td>{{a.quantity}}</td>
+        <td>{{a.price}}</td>
+        <td >{{a.total}}</td>
+    </tbody>
+    <tfoot>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><strong>Total</strong></td>
+        <td>{{totalSum}}</td>
+    </tfoot>
+</table>
+<br>
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button">Thanh toán</button>
+  </div>
+</div>
